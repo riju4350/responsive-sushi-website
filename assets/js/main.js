@@ -25,6 +25,15 @@ navLinks.forEach((n) =>
 );
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 50
+    ? header.classList.add("header-shadow")
+    : header.classList.remove("header-shadow");
+};
+
+window.addEventListener("scroll", scrollHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
 
