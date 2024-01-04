@@ -112,13 +112,13 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
   margin-bottom: 1.5rem;
 }
 
-.section__subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--h2-font-size);
   font-family: var(--subtitle-font);
@@ -126,8 +126,8 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.section__title,
-.section__subtitle {
+.section-title,
+.section-subtitle {
   text-align: center;
 }
 
@@ -352,7 +352,42 @@ img {
   transform: translateX(0.25rem);
 }
 /*=============== ABOUT ===============*/
+.about {
+  position: relative;
+}
 
+.about-container {
+  row-gap: 3rem;
+}
+
+.about-title img {
+  width: 25px;
+}
+
+.about-title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-img {
+  width: 300px;
+  justify-self: center;
+}
+
+.about-leaf {
+  width: 100px;
+  position: absolute;
+  right: -1rem;
+  bottom: 10rem;
+  transform: rotate(-15deg);
+  opacity: 0.2;
+}
 /*=============== POPULAR ===============*/
 
 /*=============== RECENTLY ===============*/
