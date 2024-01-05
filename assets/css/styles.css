@@ -15,6 +15,7 @@
   --body-color: #fff1eb;
   --container-color: #fff5f0;
   --box-shadow-color: #642f161a;
+  --newsletter-bg: #2f231d;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -480,8 +481,8 @@ img {
   width: 25px;
   position: absolute;
   top: 3.5rem;
-  /* right: 1.5rem; */
-  transform: rotate(40deg);
+  right: 2rem;
+  transform: rotate(30deg);
 }
 
 .recently-img {
@@ -510,6 +511,62 @@ img {
 }
 
 /*=============== NEWSLETTER ===============*/
+.newsletter-container {
+  position: relative;
+}
+
+.newsletter-content {
+  position: relative;
+  background-color: var(--newsletter-bg);
+  border-radius: 2.5rem;
+  padding: 5rem 1rem 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.newsletter-img {
+  width: 250px;
+  position: absolute;
+  top: -4.5rem;
+  left: -8rem;
+}
+
+.newsletter-data > .section-title {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  background-color: #fff;
+  display: flex;
+  padding: 5px 5px 5px 16px;
+  border-radius: 4rem;
+  column-gap: 0.5rem;
+}
+
+.newsletter-input,
+.newsletter-button {
+  font-family: var(--body-font);
+  border: none;
+  outline: none;
+}
+
+.newsletter-input {
+  width: 90%;
+  color: var(--text-color);
+}
+
+.newsletter-button {
+  cursor: pointer;
+}
+.newsletter-spinach-img {
+  width: 30px;
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  transform: rotate(45deg);
+}
 
 /*=============== FOOTER ===============*/
 
